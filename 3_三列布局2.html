@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			/*position: absolute;
+			left: 0;
+			right: 0;*/
+			position: relative;相对定位也可以
+		}
+		.left {
+			width: 200px;
+			height: 600px;
+			background-color: cyan;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.right {
+			width: 200px;
+			height: 600px;
+			background-color: cyan;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.main {
+			height: 600px;
+			margin-left: 200px;
+			margin-right: 200px;
+			background-color: #fd8088;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">左侧</div>
+		<div class="right">右侧</div>
+		<div class="main">主体</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.container {
+			position: relative;/*主要用于父级区块*/
+			/*left: 0;左边定位起始点
+			right: 0;左边定位起始点*/
+			margin: auto;/*左右边距自动挤压，即自动居中*/
+			max-width: 960px;/*******设置最大宽度，max-width可避免水平滚动条*/
+		}
+		.left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 600px;
+			background-color: skyblue;
+		}
+		.right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 750px;
+			height: 600px;
+			background-color: cyan;
+		}
+		.clear {
+			-ms-zoom: 1;
+		}
+		.clear:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container clear">
+		<div class="left">左侧</div>
+		<div class="right">右侧</div>
+	</div>
+</body>
+</html>
